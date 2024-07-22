@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+     <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>To-Do List</h1>
+                <p>Progress!!</p>
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-num">
+                <p id="numbers">2/3</p>
+            </div>
+        </div>
+        <div class="form">
+            <input id="task-input" type="text" placeholder="Enter your tasks!!">
+            <select id="priority-select">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="new-task" type="submit">+</button>
+        </div>
+            <div class="list">
+                <ul id="task-list"></ul>
+            </div>
+        </div>
+     </div>
+    <script src="java.js"></script>
+</body>
+</html>

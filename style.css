@@ -1,0 +1,397 @@
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@font-face {
+    font-family: myFont1;
+    src: url('neuropolitical.otf');
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url('sofachrome\ rg.otf');
+}
+
+@font-face {
+    font-family: myFont3;
+    font-size: larger;
+    font-weight: bolder;
+    src: url('ethnocentric\ rg\ it.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: myFont1;
+    border-right: 2px solid;
+    width: 43%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(100), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+p {
+    margin-top: 20px;
+    font-family: myfont2;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 10px;
+    width: 63%;
+    animation: typing 2s, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+#numbers {
+    font-family: myFont2;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+body {
+    background-image: url('peakpx3.jpg');
+    background-repeat: no-repeat;
+    height: 100;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin: 120px auto 0 auto;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 14px 31px 107px 13px rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 700px;
+    animation: boxshadow 5s ease;
+}
+
+@keyframes boxshadow {
+    from { box-shadow: 0px 0px 0px 0px rgb(0, 0, 0); }
+    to { box-shadow: 14px 31px 107px 13px rgb(0, 0, 0); }
+}
+
+.stats-container {
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.details {
+    width: 100%;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#progress {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgb(231, 0, 0);
+    transition: .5s ease-in;
+    
+}
+
+.stats-num {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    flex: 1;
+    font-family: myFont1;
+    padding: 10px;
+    border: 3px;
+    margin-left: 30px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.936);
+}
+
+input:hover {
+    box-shadow: inset 0px 5px 5px rgb(237, 6, 6);
+}
+
+button {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: buttons 3s ease-in;
+    box-shadow: 14px 31px 60px 14px rgba(0, 0, 0, 0.429);
+    background-image: linear-gradient(to right bottom, rgb(142, 61, 61), white);
+}
+
+@keyframes buttons {
+    from { box-shadow: 0px 0px 0px 0px rgb(0, 0, 0); }
+    to { box-shadow: 14px 31px 60px 14px rgba(0, 0, 0, 0.429); }
+}
+
+button:hover{
+    transform:skewX(9deg);
+}
+
+
+ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 50px;
+    width: 850px;
+    padding-left: 90px;
+    padding-right: 80px;
+    align-items: start;
+}
+
+li {
+    position: relative;
+    padding-right: 60px; /* Adjust padding to leave space for buttons */
+    padding: 18px;
+    font-family: myFont3;
+    font-size:x-large;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.474);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border-style: groove;
+    border-color: rgba(0, 0, 0, 0.151);
+    box-shadow: inset 0px 0px 10px black;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deleteTask {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    border: none !important;
+    background: transparent;
+    box-shadow: none;
+    box-shadow: 14px 31px 60px 14px rgba(0, 0, 0, 0.429);
+        
+}
+
+.deleteTask::after {
+    content: ''; /* Empty content */
+    left: 0;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.936); 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.deleteTask:hover::after {
+    transform: scaleX(-12.1);
+    top: 13px;
+    box-shadow: 2.5px 0px 0.9px 2.5px rgba(255, 0, 0, 0.936);
+}
+
+.deleteIcon {
+    width: 20px;
+    height: 20px;
+    background-image: url('delete.png'); /* Set the path to your edit icon image */
+    background-size: cover;
+    
+
+}
+
+.taskCheckbox {
+    width: 20px; 
+    height: 20px;
+    margin-left: -590px; /* Adjust space between checkbox and text */
+    position: absolute;
+    box-shadow: 0px 10px 10px 2px black;
+}
+
+
+.taskCheckbox::after{
+    content: ''; /* Empty content */
+    left: 0;
+    position: absolute;
+    right: 0;
+    background-color: rgba(105, 192, 12, 0.936); 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+   
+}
+
+.taskCheckbox:hover::after{
+    transform: scaleX(23);
+    top: 10px;
+    box-shadow: 3.4px 0px 0.9px 2.5px rgba(122, 236, 0, 0.936);
+}
+
+li.completed{
+    background: linear-gradient(to bottom, rgb(38, 254, 0), rgba(0, 254, 4, 0.2));
+}
+
+
+.editTask {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    left: 80%;
+    margin-left: 10px;
+
+  }
+  
+.editTask .editIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.editField {
+    padding: 10px;
+    margin-right: 110px;
+    margin-left: 50px;
+}
+
+
+li[data-priority="high"] {
+    background-color: #f68f99; /* Red for high priority */
+}
+
+li[data-priority="medium"] {
+    background-color: #FFF9C4; /* Yellow for medium priority */
+}
+
+li[data-priority="low"] {
+    background-color: #C8E6C9; /* Green for low priority */
+}
+
+#priority-select{
+    border-radius: 50px;
+    background: transparent;
+    box-shadow: inset 0px 5px 5px rgb(0, 0, 0);
+    justify-content: center;
+    position: relative;
+    font-family: myFont1;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        width: 63%;
+    }
+
+    .container {
+        margin-top: 120px;
+    }
+
+    .form {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input {
+        margin-left: 30px;
+        width: 70%;
+    }
+
+    button {
+        margin-right: 30px;
+        margin-top: 0;
+    }
+
+    ul {
+        padding: 50px;
+        padding-left: 90px;
+        padding-right: 80px;
+        width: 850px;
+        align-items: start;
+    }
+
+    li {
+        padding-right: 60px;
+        padding: 18px;
+        font-size: x-large;
+    }
+
+    .deleteTask {
+        right: 0;
+    }
+
+    .editTask {
+        left: 80%;
+    }
+}
+
